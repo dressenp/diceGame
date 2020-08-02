@@ -1,35 +1,25 @@
-.container {
-  display: flex;
-  justify-content: center;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
-.dice {
-  margin: 0 3%;
-  text-align: center;
-  display: inline-block;
-}
-
 body {
-  background-color: #393e46;
+  background-color: #f7d6bf;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
   margin: 30px;
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
-  text-align: center;
   font-size: 8rem;
-  color: #4ecca3;
+}
+
+h3 {
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 0 #232931;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0 0 2%;
 }
 
 p {
   font-size: 2rem;
-  color: #4ecca3;
+  color: #318fb5;
   font-family: "Indie Flower", cursive;
 }
 
@@ -39,7 +29,45 @@ img {
 
 footer {
   margin-top: 5%;
-  color: #eeeeee;
+  color: #fff;
   text-align: center;
   font-family: "Indie Flower", cursive;
+}
+
+/* Title Section */
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #318fb5;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleContainer {
+    margin-bottom: 8%;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+}
+
+/* Dice Section */
+
+.diceContainer {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  margin: 0 3%;
+  display: inline-block;
 }
